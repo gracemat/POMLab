@@ -19,7 +19,7 @@ public class AdminPage extends BasePage
 	@FindBy(id = "rmu")
 	WebElement checkbox;
 	
-	@FindBy(xpath = "//*[@id=\"log_user\"]/div[3]/input")
+	@FindBy(xpath = "//*[@id=\"log_user\"]/div[3]/input")//*[@id="log_user"]/div[3]/input
 	WebElement loginButton;
 	
 	@FindBy(xpath="//*[@id=\"log_user\"]/div[1]/text()")
@@ -49,6 +49,11 @@ public class AdminPage extends BasePage
 		loginButton.click();
 		Time_Utility_ActiveCampaign.shortTimeWait();//After Pagechaining we added this step
 		return new OverviewPage(driver);//creating an object for pagechaining also
+	}
+	
+	public boolean loginButtonisDisplayed()
+	{
+		return loginButton.isDisplayed();
 	}
 	
 	public boolean negativeTestCase(String email,String passwd,String msg)

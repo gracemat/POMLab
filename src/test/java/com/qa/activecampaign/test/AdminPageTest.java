@@ -61,7 +61,12 @@ public class AdminPageTest {
 		System.out.println(adminPage.checkBoxSelection());
 		Assert.assertFalse(adminPage.checkBoxSelection());
 	}
-	
+	@Test
+	public void verifyLoginButtonLink()
+	{
+		System.out.println(adminPage.loginButtonisDisplayed());
+		Assert.assertTrue(adminPage.loginButtonisDisplayed());
+	}
 	@AfterMethod
 	public void tearDown()
 	{

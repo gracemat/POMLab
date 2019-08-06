@@ -73,7 +73,7 @@ public class BasePage {
 		driver.manage().deleteAllCookies();
 		driver.manage().window().fullscreen();
 		driver.get(prop.getProperty("loginurl"));
-		Time_Utility_ActiveCampaign.mediumTimeWait();//I missed writing this previously
+		//Time_Utility_ActiveCampaign.mediumTimeWait();//I missed writing this previously
 		return driver;
 	}
 	/**
