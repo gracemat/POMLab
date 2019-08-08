@@ -13,8 +13,10 @@ public class Excel_Utility {
 	public static Workbook book;
 	public static Sheet sheet;// import Sheet from apache poi ss usermodel()
 	public static String PATH_OF_THE_SHEET = "C:\\Users\\prave\\eclipse-workspace\\POMLab\\src\\main\\java\\com\\qa\\activecampaign\\testdata\\ActiveCampaignTestData.xlsx";
-
-	public static Object[][] fetchTestData(String nameOfTheSheet) {
+//**
+	//Data Driven Approach to read the data that is fetching the data from excel
+	//**we are driving the data from external resources like excel
+	public static Object[][] fetchTestData(String nameOfTheSheet) {//for any other sheet just use same logic with sheet name change and path change
 		FileInputStream fileInput = null;
 		try {
 			fileInput = new FileInputStream(PATH_OF_THE_SHEET);// First step to get the file
