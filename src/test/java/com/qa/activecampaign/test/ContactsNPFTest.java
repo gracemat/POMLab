@@ -6,14 +6,17 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.qa.activecampaign.Listeners.pdfListener;
 import com.qa.activecampaign.base.BasePage;
 import com.qa.activecampaign.pages.AdminNPFPage;
 import com.qa.activecampaign.pages.ContactsNPFPage;
 import com.qa.activecampaign.pages.OverviewNPFPage;
 import com.qa.activecampaign.utilities.Excel_Utility;
 
+@Listeners(pdfListener.class)
 public class ContactsNPFTest {
 	BasePage basePage;
 	WebDriver driver;
