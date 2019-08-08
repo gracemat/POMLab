@@ -41,12 +41,12 @@ package com.qa.activecampaign.pages;
 			return driver.getTitle();
 		}
 		
-		public void LogInMethod(String accName) {
+		public OverviewPage LogInMethod(String accName) {
 			System.out.println("UserDetails:"+accName);
 			accountName.sendKeys(accName);
 			loginButton.click();
 			//Time_Utility_ActiveCampaign.shortTimeWait();
-			//return new OverviewPage(driver);
+			return new OverviewPage(driver);
 		}
 		
 		public boolean forgotAccLinkDisplay()

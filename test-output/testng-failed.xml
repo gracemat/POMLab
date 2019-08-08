@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.activecampaign.test.OverViewPageTest">
+      <class name="com.qa.activecampaign.test.ContactsNPFTest">
         <methods>
-          <include name="verify_settingsLink_Test"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="createNewContactTest"/>
         </methods>
-      </class> <!-- com.qa.activecampaign.test.OverViewPageTest -->
+      </class> <!-- com.qa.activecampaign.test.ContactsNPFTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -68,7 +68,7 @@ public class Element_Actions_Utility extends BasePage {
 	public void waitForElement(By locator)
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+//		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 	}
 	/**
 	 * This method waits for title using WebDriverWait class object and calling ExpectedConditions.titleContains method
@@ -76,8 +76,8 @@ public class Element_Actions_Utility extends BasePage {
 	 */
 	public void waitForTitle(String title)
 	{
-		WebDriverWait wait = new WebDriverWait(driver, 11);
-		wait.until(ExpectedConditions.titleContains(title));
+	WebDriverWait wait = new WebDriverWait(driver, 11);
+	//wait.until(ExpectedConditions.titleContains(title));
 		
 	}
 	/**

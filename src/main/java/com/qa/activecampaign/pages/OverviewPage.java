@@ -24,6 +24,11 @@ WebElement contacts;
 	@FindBy(xpath = "//*[@id='uxbody']/nav/div/div[3]/div/ul/li[2]/a/div/div[2]/span")////span[[@class='ml20 item-text'] & [@contains,text() = 'settings']]----Work on this after xpath custom class
 	WebElement settingsLink;
 	
+	@FindBy(xpath = "//span[text()='Contacts']")
+	WebElement contactsClick;
+	
+	
+	
 	public OverviewPage(WebDriver driver)
 	{
 	this.driver = driver;	
@@ -62,6 +67,19 @@ WebElement contacts;
 	public String getOverViewPageTitle()
 	{
 		return driver.getTitle();
+	}
+	/**
+	 * This method is is used to click on Contacts icon
+	 */
+	public void clickOnContacts() 
+	{
+			contactsClick.click();
+	}
+	//Page chaining and creating ContactsPageObj
+	public ContactsPage goToContactsPage() 
+	{
+		clickOnContacts();//we are landing on ContactsPage
+		return  new ContactsPage(driver);//returns new ContactsPageObject
 	}
 	
 }

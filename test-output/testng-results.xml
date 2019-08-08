@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61062" started-at="2019-08-01T12:23:33Z" finished-at="2019-08-01T12:24:35Z">
+  <suite name="Default suite" duration-ms="23060" started-at="2019-08-08T03:34:33Z" finished-at="2019-08-08T03:34:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61062" started-at="2019-08-01T12:23:33Z" finished-at="2019-08-01T12:24:35Z">
-      <class name="com.qa.activecampaign.test.OverViewPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.activecampaign.test.OverViewPageTest@1bce4f0a]" name="setUp" is-config="true" duration-ms="16785" started-at="2019-08-01T12:23:33Z" finished-at="2019-08-01T12:23:50Z">
+    <test name="Default test" duration-ms="23060" started-at="2019-08-08T03:34:33Z" finished-at="2019-08-08T03:34:56Z">
+      <class name="com.qa.activecampaign.test.ContactsNPFTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.activecampaign.test.ContactsNPFTest@1a968a59]" name="setUp" is-config="true" duration-ms="19321" started-at="2019-08-08T03:34:33Z" finished-at="2019-08-08T03:34:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Verify_Url_Test()[pri:0, instance:com.qa.activecampaign.test.OverViewPageTest@1bce4f0a]" name="Verify_Url_Test" duration-ms="10019" started-at="2019-08-01T12:23:50Z" finished-at="2019-08-01T12:24:00Z">
+        <test-method status="PASS" signature="createNewContactTest()[pri:0, instance:com.qa.activecampaign.test.ContactsNPFTest@1a968a59]" name="createNewContactTest" duration-ms="3040" started-at="2019-08-08T03:34:52Z" finished-at="2019-08-08T03:34:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Url_Test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.activecampaign.test.OverViewPageTest@1bce4f0a]" name="tearDown" is-config="true" duration-ms="787" started-at="2019-08-01T12:24:00Z" finished-at="2019-08-01T12:24:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.activecampaign.test.OverViewPageTest@1bce4f0a]" name="setUp" is-config="true" duration-ms="15876" started-at="2019-08-01T12:24:01Z" finished-at="2019-08-01T12:24:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verify_OverviewPageTitle_Test()[pri:0, instance:com.qa.activecampaign.test.OverViewPageTest@1bce4f0a]" name="verify_OverviewPageTitle_Test" duration-ms="9" started-at="2019-08-01T12:24:17Z" finished-at="2019-08-01T12:24:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_OverviewPageTitle_Test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.activecampaign.test.OverViewPageTest@1bce4f0a]" name="tearDown" is-config="true" duration-ms="1083" started-at="2019-08-01T12:24:17Z" finished-at="2019-08-01T12:24:18Z">
+        </test-method> <!-- createNewContactTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.activecampaign.test.ContactsNPFTest@1a968a59]" name="tearDown" is-config="true" duration-ms="675" started-at="2019-08-08T03:34:55Z" finished-at="2019-08-08T03:34:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.activecampaign.test.OverViewPageTest@1bce4f0a]" name="setUp" is-config="true" duration-ms="15688" started-at="2019-08-01T12:24:18Z" finished-at="2019-08-01T12:24:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verify_UserName_Test()[pri:0, instance:com.qa.activecampaign.test.OverViewPageTest@1bce4f0a]" name="verify_UserName_Test" duration-ms="100" started-at="2019-08-01T12:24:34Z" finished-at="2019-08-01T12:24:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_UserName_Test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.activecampaign.test.OverViewPageTest@1bce4f0a]" name="tearDown" is-config="true" duration-ms="683" started-at="2019-08-01T12:24:34Z" finished-at="2019-08-01T12:24:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.activecampaign.test.OverViewPageTest -->
+      </class> <!-- com.qa.activecampaign.test.ContactsNPFTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
