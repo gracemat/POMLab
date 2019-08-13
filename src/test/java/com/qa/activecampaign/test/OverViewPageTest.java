@@ -9,13 +9,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.qa.activecampaign.Listeners.pdfListener;
+//import com.qa.activecampaign.Listeners.pdfListener;
 import com.qa.activecampaign.base.BasePage;
 import com.qa.activecampaign.constants.ActiveCampaign_ConstantValues;
 import com.qa.activecampaign.pages.AdminPage;
 import com.qa.activecampaign.pages.OverviewPage;
 
-@Listeners(pdfListener.class)
+//@Listeners(pdfListener.class)
 public class OverViewPageTest {
 	WebDriver driv;
 	Properties properties;

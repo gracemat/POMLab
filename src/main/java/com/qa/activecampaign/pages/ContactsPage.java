@@ -12,7 +12,10 @@ import com.qa.activecampaign.base.BasePage;
 
 public class ContactsPage extends BasePage
 {	
-	@FindBy(xpath = "//span[text()='Add a contact']")
+	@FindBy(xpath = "//*//span[text()='Contacts']")
+	WebElement Contacts;
+	
+	@FindBy(xpath = "//a//span[text()='Add a contact']")
 	WebElement addAContact;
 		
 	@FindBy(id = "add-contact-email")
@@ -38,24 +41,26 @@ public class ContactsPage extends BasePage
 	
 	public void addAContact(String emailId,String fName,String lName,String phNum)
 	{
-		WebDriverWait wait = new WebDriverWait(driver, 3);//here we are writing ExplicitWAit
+		//WebDriverWait wait = new WebDriverWait(driver, 3);//here we are writing ExplicitWAit
 		
-//		wait.until(ExpectedConditions.elementToBeClickable(addAContact));
+		//wait.until(ExpectedConditions.elementToBeClickable(addAContact));
+		Contacts.click();
+		
 		addAContact.click();
 		
-//		wait.until(ExpectedConditions.elementToBeClickable(email));
+		//wait.until(ExpectedConditions.elementToBeClickable(email));
 		email.sendKeys(emailId);
 		
-//		wait.until(ExpectedConditions.elementToBeClickable(firstName));
+		//wait.until(ExpectedConditions.elementToBeClickable(firstName));
 		firstName.sendKeys(fName);
 		
-//		wait.until(ExpectedConditions.elementToBeClickable(lastName));
+		//wait.until(ExpectedConditions.elementToBeClickable(lastName));
 		lastName.sendKeys(lName);
 		
-//		wait.until(ExpectedConditions.elementToBeClickable(phoneNumber));
+		//wait.until(ExpectedConditions.elementToBeClickable(phoneNumber));
 		phoneNumber.sendKeys(phNum);
 		
-//		wait.until(ExpectedConditions.elementToBeClickable(add));
+		//wait.until(ExpectedConditions.elementToBeClickable(add));
 		add.click();
 	}
 	
