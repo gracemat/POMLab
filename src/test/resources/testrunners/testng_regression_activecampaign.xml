@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ActiveCampaign_Regression_suite">
+
+<listeners>
+<listener class-name = "com.qa.activecampaign.Listeners.pdfListener"/>
+</listeners>
+  <test thread-count="5" name="ActiveCampaign_Test_cases">
+    <classes>
+      <class name="com.qa.activecampaign.test.AdminPageTest"/>
+      <class name="com.qa.activecampaign.test.OverViewPageTest"/>
+      <class name="com.qa.activecampaign.test.ContactsNPFTest"/>
+      <class name="com.qa.activecampaign.test.ContactsPageTest"/>
+      <class name="com.qa.activecampaign.test.ActiveCampaign_LoginPageTest"/>
+      <class name="com.qa.activecampaign.test.OverviewPageNPFTest"/>
+      <class name="com.qa.activecampaign.test.AdminNpfTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
