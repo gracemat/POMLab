@@ -45,18 +45,17 @@ public class AdminPageTest {
 		System.out.println("Next Page URL is :: "+overviewPageTile);
 		Assert.assertEquals(overviewPageTile, ActiveCampaign_ConstantValues.OVERVIEW_PAGE_URL);
 	}
-	
-	@Test(priority=3)
-	public void checkingWithWrongCredentialsTest()
-	{
-//		String errorMsgText = adminPage.negativeTestCase("greeshmahere@gmail.com", "L0g!nnow");
-//		System.out.println(errorMsgText);
-//		
-		//*[@id="log_user"]/div[1]/text()
-		//adminPage.doLogin("greeshmahere@gmail.com", "L0g!nnow");
-		Assert.assertTrue(adminPage.negativeTestCase("greeshmahere@gmail.com", "L0g!nnow","Invalid username or password. Forgot your password? Reset it"));
-		
-	}
+	/*
+	 * @Test(priority=3) public void checkingWithWrongCredentialsTest() { // String
+	 * errorMsgText = adminPage.negativeTestCase("greeshmahere@gmail.com",
+	 * "L0g!nnow"); // System.out.println(errorMsgText); //
+	 * //*[@id="log_user"]/div[1]/text()
+	 * //adminPage.doLogin("greeshmahere@gmail.com", "L0g!nnow");
+	 * Assert.assertTrue(adminPage.negativeTestCase("greeshmahere@gmail.com",
+	 * "L0g!nnow","Invalid username or password. Forgot your password? Reset it"));
+	 * 
+	 * }
+	 */
 	
 	@Test(priority = 2)
 	public void verifyCheckBoxSelectionTest()

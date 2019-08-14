@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="ActiveCampaign__Sanity_suite">
-<!-- <listeners>
-<listener class-name = "com.qa.activecampaign.Listeners.pdfListener"/>
-</listeners> -->
+<listeners>
+<!-- <listener class-name = "com.qa.activecampaign.Listeners.pdfListener"/> -->
+<listener class-name = "com.qa.activecampaign.Listeners.ExtentReportListener"/>
+</listeners>
+
 
   <test thread-count="5" name="ActiveCampaign_sanity_Test_cases">
     <classes>
-    
-          <class name="com.qa.activecampaign.test.OverviewPageNPFTest"/>
+    <!-- 
+          <class name="com.qa.activecampaign.test.OverviewPageNPFTest"/> -->
       <class name="com.qa.activecampaign.test.AdminNpfTest"/>
     </classes>
   </test> <!-- Test -->
