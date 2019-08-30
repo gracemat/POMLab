@@ -9,13 +9,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.qa.activecampaign.Listeners.ExtentReportListener;
 //import com.qa.activecampaign.Listeners.pdfListener;
 import com.qa.activecampaign.base.BasePage;
 import com.qa.activecampaign.constants.ActiveCampaign_ConstantValues;
 import com.qa.activecampaign.pages.AdminNPFPage;
 import com.qa.activecampaign.pages.OverviewNPFPage;
 
-//@Listeners(pdfListener.class)
+@Listeners(ExtentReportListener.class)
 public class OverviewPageNPFTest {
 	
 	BasePage basePg;

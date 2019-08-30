@@ -9,12 +9,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.qa.activecampaign.Listeners.ExtentReportListener;
 //import com.qa.activecampaign.Listeners.pdfListener;
 import com.qa.activecampaign.base.BasePage;
 import com.qa.activecampaign.constants.ActiveCampaign_ConstantValues;
 import com.qa.activecampaign.pages.AdminNPFPage;
 
-//@Listeners(pdfListener.class)
+@Listeners(ExtentReportListener.class)
 public class AdminNpfTest 
 {
 	BasePage basePg;
@@ -39,14 +40,14 @@ public class AdminNpfTest
 		Assert.assertEquals(adminNPFPage.getAdminPageTitle(), ActiveCampaign_ConstantValues.ADMINPAGE_TITLE);
 	}
 	
-	@Test
+	@Test(enabled = true)
 	public void verifyCheckBoxTest()
 	{
 		System.out.println(adminNPFPage.checkBoxSelection());
-		Assert.assertFalse(adminNPFPage.checkBoxSelection());
+		Assert.assertTrue(adminNPFPage.checkBoxSelection());
 	}
 	
-	@Test
+	@Test(enabled = true)
 	public void adminPageLoginTest()
 	{
 		//adminPage.doLogin(properties.getProperty("EmailAddress"), properties.getProperty("PassWord"));
@@ -57,7 +58,7 @@ public class AdminNpfTest
 	public void verifyLoginButtonLink()
 	{
 		System.out.println(adminNPFPage.loginButtonIsDisplayed());
-		Assert.assertTrue(adminNPFPage.loginButtonIsDisplayed());
+		Assert.assertTrue((adminNPFPage.loginButtonIsDisplayed()));
 	}
 	@AfterMethod
 	public void tearDown()
