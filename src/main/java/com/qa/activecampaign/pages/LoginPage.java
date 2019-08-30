@@ -38,7 +38,7 @@ package com.qa.activecampaign.pages;
 		
 		public String getLoginPageTitle()
 		{
-			return driver.getTitle();
+			return getDriver().getTitle();
 		}
 		
 		public OverviewPage LogInMethod(String accName) {

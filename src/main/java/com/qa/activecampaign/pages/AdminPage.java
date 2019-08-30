@@ -33,7 +33,7 @@ public class AdminPage extends BasePage
 
 	public String getAdminPageTitle()
 	{
-		return driver.getTitle();
+		return getDriver().getTitle();
 	}
 	
 	public boolean checkBoxSelection()
@@ -48,7 +48,7 @@ public class AdminPage extends BasePage
 		password.sendKeys(pwd);
 		loginButton.click();
 		Time_Utility_ActiveCampaign.shortTimeWait();//After Pagechaining we added this step
-		return new OverviewPage(driver);//creating an object for pagechaining also
+		return new OverviewPage(getDriver());//creating an object for pagechaining also
 	}
 	
 	public boolean loginButtonisDisplayed()

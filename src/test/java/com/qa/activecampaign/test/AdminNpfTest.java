@@ -34,6 +34,7 @@ public class AdminNpfTest
 	}
 	
 	@Test
+	
 	public void verifyAdminPageTitleTest()
 	{
 		System.out.println(adminNPFPage.getAdminPageTitle());

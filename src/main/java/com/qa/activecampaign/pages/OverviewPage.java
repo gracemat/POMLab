@@ -41,7 +41,7 @@ WebElement contacts;
 	public String getUrl()
 	{
 	Time_Utility_ActiveCampaign.longTimeWait();
-	return driver.getCurrentUrl();	
+	return getDriver().getCurrentUrl();	
 	}
 	
 	public String giveUserName()
@@ -66,7 +66,7 @@ WebElement contacts;
 	
 	public String getOverViewPageTitle()
 	{
-		return driver.getTitle();
+		return getDriver().getTitle();
 	}
 	/**
 	 * This method is is used to click on Contacts icon
