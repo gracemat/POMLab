@@ -15,6 +15,10 @@ import com.qa.activecampaign.base.BasePage;
 import com.qa.activecampaign.constants.ActiveCampaign_ConstantValues;
 import com.qa.activecampaign.pages.LoginPage;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 @Listeners(ExtentReportListener.class)
 public class ActiveCampaign_LoginPageTest {
 	WebDriver driv;
@@ -42,6 +46,8 @@ public class ActiveCampaign_LoginPageTest {
 	 * This method is used to  get LoginPAge Title
 	 */
 	@Test(priority = 1)
+	@Description("LoginPageTitle Test- Positive Test Case")
+	@Severity(SeverityLevel.NORMAL)
 	public void verifyLoginPageTitle()
 	{
 		String title = logPg.getLoginPageTitle();
@@ -50,6 +56,8 @@ public class ActiveCampaign_LoginPageTest {
 	}
 	
 	@Test(priority = 2)
+	@Description("Forgot PAssword link test - Positive Test case")
+	@Severity(SeverityLevel.MINOR)
 	public void verifyForgotAccLinkDisplay()
 	{
 		Assert.assertTrue(logPg.forgotAccLinkDisplay());

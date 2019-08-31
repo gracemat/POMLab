@@ -14,7 +14,15 @@ import com.qa.activecampaign.base.BasePage;
 import com.qa.activecampaign.constants.ActiveCampaign_ConstantValues;
 import com.qa.activecampaign.pages.AdminPage;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 //@Listeners(pdfListener.class)
+@Epic("Epic ActiveCampaign AdminPage test")
+@Feature("AC - 101 With PageFactory")
 public class AdminPageTest {
 	WebDriver driver;
 	Properties properties;
@@ -31,6 +39,8 @@ public class AdminPageTest {
 	}
 
 	@Test 
+	@Description("AdminPAge Title Test - Positive Test case ")
+	@Severity(SeverityLevel.BLOCKER)
 	public void verifyAdminPageTitleTest()
 	{
 		String title = adminPage.getAdminPageTitle();
@@ -38,6 +48,8 @@ public class AdminPageTest {
 		Assert.assertEquals(title, ActiveCampaign_ConstantValues.ADMINPAGE_TITLE);
 	}
 	@Test(priority =1)
+	@Description("AdminPAge Login Test - Positive Test case ")
+	@Severity(SeverityLevel.CRITICAL)
 	public void loginTest()
 	{
 		adminPage.doLogin(properties.getProperty("EmailAddress"), properties.getProperty("PassWord"));

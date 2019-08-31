@@ -8,6 +8,8 @@ import com.qa.activecampaign.constants.ActiveCampaign_ConstantValues;
 import com.qa.activecampaign.utilities.Element_Actions_Utility;
 import com.qa.activecampaign.utilities.Time_Utility_ActiveCampaign;
 
+import io.qameta.allure.Step;
+
 public class AdminNPFPage extends BasePage {
 	Element_Actions_Utility elemAct;
 	By emailaddress = By.id("user");
@@ -21,13 +23,13 @@ public class AdminNPFPage extends BasePage {
 		elemAct = new Element_Actions_Utility(driver);
 	}
 	
-	
+	@Step("getting the AdminPage Title and retuning the title step .....")
 	public String getAdminPageTitle()
 	{
 		elemAct.waitForTitle(ActiveCampaign_ConstantValues.ADMINPAGE_TITLE);
 		return	elemAct.getTitleUtil();
 	}
-	
+	@Step("Loginbutton displayed boolean value true for isDisplayed ")
 	public boolean loginButtonIsDisplayed() 
 	{
 		return elemAct.elementIsDisplayedUtil(loginButton);
@@ -37,7 +39,7 @@ public class AdminNPFPage extends BasePage {
 		 * This method is used for checkBox selection
 		 * @return boolean value of isSelected method
 		 */
-
+@Step("Is Checkbox selected and returning boolean value step..")
 	public boolean checkBoxSelection()
 	{
 		return elemAct.isSelectedUtil(checkbox);
@@ -48,6 +50,7 @@ public class AdminNPFPage extends BasePage {
 	 * @param pwd
 	 * @return OverviewPage
 	 */
+	@Step("logging with : {0} and {1}")
 	public OverviewNPFPage doLogin(String email,String pwd)
 	{
 		System.out.println("Here the User details are "+email +"*-*"+pwd);

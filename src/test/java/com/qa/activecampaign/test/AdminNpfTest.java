@@ -15,6 +15,14 @@ import com.qa.activecampaign.base.BasePage;
 import com.qa.activecampaign.constants.ActiveCampaign_ConstantValues;
 import com.qa.activecampaign.pages.AdminNPFPage;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
+@Epic("Epic - ActiveCampaign AdminPage NonPageFactory Module")
+@Feature("AC-101 :Defines the Admin page Login")
 @Listeners(ExtentReportListener.class)
 public class AdminNpfTest 
 {
@@ -34,7 +42,8 @@ public class AdminNpfTest
 	}
 	
 	@Test
-	
+	@Description("AdminPAge Title Test - Positive Test case ")
+	@Severity(SeverityLevel.BLOCKER)
 	public void verifyAdminPageTitleTest()
 	{
 		System.out.println(adminNPFPage.getAdminPageTitle());
@@ -42,6 +51,8 @@ public class AdminNpfTest
 	}
 	
 	@Test(enabled = true)
+	@Description("CheckBox Test - Positive Test case ")
+	@Severity(SeverityLevel.MINOR)
 	public void verifyCheckBoxTest()
 	{
 		System.out.println(adminNPFPage.checkBoxSelection());
@@ -49,6 +60,8 @@ public class AdminNpfTest
 	}
 	
 	@Test(enabled = true)
+	@Description("AdminPAge Login Test - Positive Test case ")
+	@Severity(SeverityLevel.CRITICAL)
 	public void adminPageLoginTest()
 	{
 		//adminPage.doLogin(properties.getProperty("EmailAddress"), properties.getProperty("PassWord"));
@@ -56,6 +69,8 @@ public class AdminNpfTest
 	}
 	
 	@Test
+	@Description("AdminPAge LoginButtonDisplay Test - Positive Test case ")
+	@Severity(SeverityLevel.CRITICAL)
 	public void verifyLoginButtonLink()
 	{
 		System.out.println(adminNPFPage.loginButtonIsDisplayed());
